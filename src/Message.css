@@ -4,7 +4,7 @@
     width: fit-content;
 }
 
-.message_user {
+.message__user {
     margin-left: auto;
     color: white;
     text-align: left;
@@ -21,4 +21,18 @@
 
 .message__guestCard {
     background-color: #e9e9eb !important;
+}
+
+.message__messageData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message__time {
+    text-align: right;
+    color: black;
+    padding-right: 5px;
+}
+.message__userText {
+    color: #e9e9eb;
 }

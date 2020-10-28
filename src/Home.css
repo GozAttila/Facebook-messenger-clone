@@ -1,4 +1,4 @@
-.app {
+.home {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -7,13 +7,13 @@
     /*background-color: coral;*/
 }
 
-.app__navbar {
+.home__navbar {
     height: 100px;
     width: 100%;
     /*background-color: deepskyblue;*/
 }
 
-.app__flipMove {
+.home__flipMove {
     max-width: 70%;
     min-width: 400px;
     padding-left: 15%;
@@ -28,11 +28,11 @@
 }
 
     /* Hide scrollbar for Chrome, Safari and Opera */
-.app__flipMove::-webkit-scrollbar {
+.home__flipMove::-webkit-scrollbar {
     display: none;
 }
 
-.app__messages {
+.home__messages {
     height: 100%;
     max-width: 70%;
     min-width: 400px;
@@ -44,7 +44,7 @@
     overflow-y: scroll;
 }
 
-.app__formContainer {
+.home__formContainer {
     max-width: 70%;
     min-width: 400px;
     margin-left: 15%;
@@ -55,74 +55,21 @@
     border-top: 1px solid darkgray;
 }
 
-.app__formControl {
+.home__formControl {
     display: flex !important;
     flex-direction: row !important;
 }
 
-.app__input {
+.home__input {
     flex: 1;
     margin-left: 20px;
     /*background-color: darkgray;*/
 }
 
-.app__iconButton {
+.home__iconButton {
     flex: 0;
 }
 
-.app__sendIcon {
+.home__sendIcon {
     margin-right: 20px;
 }
-
-
-
-/*.app {*/
-/*    text-align: center;*/
-/*}*/
-
-/*.app__mainContainer {*/
-/*    background-color: coral;*/
-/*    !*max-width: 800px;*!*/
-/*    max-width: 70%;*/
-/*    min-width: 400px;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    margin-bottom: 140px;*/
-/*}*/
-
-/*.app__inputCover {*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    z-index: 1;*/
-/*    !*width: 800px;*!*/
-/*    max-width: 100%;*/
-/*    min-width: 400px;*/
-/*    height: 130px;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    background-color: lightcoral;*/
-/*}*/
-
-/*.app__form {*/
-/*    padding: 20px;*/
-/*    position: sticky;*/
-/*    bottom: 20px;*/
-/*    z-index: 2;*/
-/*    background-color: #e9e9eb;*/
-/*    margin: 20px;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.app__formControl {*/
-/*    display: flex !important;*/
-/*    flex-direction: row !important;*/
-/*}*/
-
-/*.app__input {*/
-/*    flex: 1;*/
-/*}*/
-
-/*.app__iconButton {*/
-/*    flex: 0;*/
-/*}*/
-

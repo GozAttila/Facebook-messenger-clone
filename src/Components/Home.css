@@ -1,24 +1,22 @@
 .home {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-between;
     height: 100vh;
     width: 100vw;
-    /*background-color: coral;*/
 }
 
 .home__navbar {
     height: 100px;
     width: 100%;
-    /*background-color: deepskyblue;*/
 }
 
 .home__flipMove {
+    height: 100%;
     max-width: 70%;
     min-width: 400px;
     padding-left: 15%;
     padding-right: 15%;
-    /*background-color: darkseagreen;*/
     scroll-behavior: smooth;
     overflow-y: scroll;
 
@@ -39,7 +37,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    /*background-color: darkseagreen;*/
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
@@ -49,7 +46,6 @@
     min-width: 400px;
     margin-left: 15%;
     margin-right: 15%;
-    /*background-color: palegoldenrod;*/
     margin-bottom: 20px;
     padding-top: 20px;
     border-top: 1px solid darkgray;
@@ -63,7 +59,6 @@
 .home__input {
     flex: 1;
     margin-left: 20px;
-    /*background-color: darkgray;*/
 }
 
 .home__iconButton {

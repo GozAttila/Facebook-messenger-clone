@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
 import {useHistory} from "react-router-dom";
 
-import {auth} from "./firebase";
+import {auth} from "../firebase";
 
 import "./Login.css";
-import AllInLogo from "./Assets/all_in_logo.png"
-import MessengerLogo from "./Assets/messenger_logo.svg"
-import {useStateValue} from "./store/StateProvider";
+import AllInLogo from "../Assets/all_in_logo.png"
+import MessengerLogo from "../Assets/messenger_logo.svg"
+import {useStateValue} from "../store/StateProvider";
 
 const Login = () => {
     const history = useHistory();
@@ -68,6 +68,7 @@ const Login = () => {
                 </p>
 
                 <button onClick={register} className='login__registerButton'>Create your ALL-IN Account</button>
+
             </div>
 
         </div>

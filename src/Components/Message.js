@@ -13,12 +13,19 @@ const Message = forwardRef(({username, message}, ref) => {
 
     return (
         <div ref={ref} className={`message ${isCurrentUser && 'message__user'}`}>
-            <div className="message__time">{message.timestamp ? dayjs().from(dayjs(message.timestamp.seconds * 1000)) : ""}</div>
+
+            <div className="message__time">
+                {message.timestamp ? dayjs().from(dayjs(message.timestamp.seconds * 1000)) : ""}
+            </div>
+
             <Card className={isCurrentUser ? "message__userCard" : "message__guestCard"}>
+
                 <CardContent>
+
                     <div className="message__username">
                         {!isCurrentUser && `${message.username.split("@")[0] || "Unknown user"}`}
                     </div>
+
                     <Typography
                         className={`${isCurrentUser && 'message__userText'}`}
                         variant="h5"
@@ -26,8 +33,11 @@ const Message = forwardRef(({username, message}, ref) => {
                     >
                         {message.message}
                     </Typography>
+
                 </CardContent>
+
             </Card>
+
         </div>
     );
 });

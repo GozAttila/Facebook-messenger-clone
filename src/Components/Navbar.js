@@ -1,9 +1,11 @@
 import React from 'react';
-import AllInLogo from "./Assets/all_in_logo.png"
-import "./Navbar.css";
+import {auth} from "../firebase";
+import {useStateValue} from "../store/StateProvider";
+
 import {Button} from "@material-ui/core";
-import {useStateValue} from "./store/StateProvider";
-import {auth} from "./firebase";
+
+import "./Navbar.css";
+import AllInLogo from "../Assets/all_in_logo.png"
 
 const Navbar = () => {
     const [{user}, dispatch] = useStateValue();

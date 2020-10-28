@@ -6,9 +6,8 @@ import {useStateValue} from "./store/StateProvider";
 import {SET_USER} from "./store/actionTypes";
 
 import './App.css';
-import Home from "./Home";
-import Login from "./Login";
-
+import Home from "./Components/Home";
+import Login from "./Components/Login";
 
 function App() {
     const [{user}, dispatch] = useStateValue();
@@ -34,6 +33,7 @@ function App() {
     return (
         <Router>
             <Switch>
+
                 <Route path="/login">
                     <Login />
                 </Route>
@@ -41,6 +41,7 @@ function App() {
                 <Route path="/">
                     <Home />
                 </Route>
+
             </Switch>
         </Router>
     );

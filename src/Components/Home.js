@@ -3,14 +3,14 @@ import firebase from "firebase";
 import FlipMove from "react-flip-move";
 import {useHistory} from "react-router-dom";
 
-import db from "./firebase";
+import db from "../firebase";
 
-import {Button, FormControl, InputLabel, Input, IconButton} from "@material-ui/core";
+import {FormControl, Input, IconButton} from "@material-ui/core";
 import SendRoundedIcon from '@material-ui/icons/SendRounded';
 
 import './Home.css';
 import Message from "./Message";
-import {useStateValue} from "./store/StateProvider";
+import {useStateValue} from "../store/StateProvider";
 import Navbar from "./Navbar";
 
 function Home() {
@@ -51,9 +51,11 @@ function Home() {
 
     return (
         <div className="home">
+
             <div className="home__navbar">
-<Navbar />
+                <Navbar/>
             </div>
+
             <FlipMove className="home__flipMove">
                 {messages.map(({id, message}) => (
                     <Message key={id} username={username} message={message}/>
@@ -63,12 +65,14 @@ function Home() {
             <div className="home__formContainer">
                 <form className="home__form">
                     <FormControl className="home__formControl">
+
                         <Input
                             className="home__input"
                             placeholder="Enter a message..."
                             value={input}
                             onChange={event => setInput(event.target.value)}
                         />
+
                         <IconButton
                             className="home__iconButton"
                             disabled={!input}
@@ -76,8 +80,11 @@ function Home() {
                             color="primary"
                             type='submit'
                             onClick={sendMessage}>
+
                             <SendRoundedIcon className="home__sendIcon"/>
+
                         </IconButton>
+
                     </FormControl>
                 </form>
             </div>
